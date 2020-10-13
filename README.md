@@ -58,4 +58,4 @@ cd ugdsre_biomedical
 CUDA_VISIBLE_DEVICES=0 python train_ug_proposed.py
 ~~~
 ## Acknowledgement
-Specital thanks for the [codes](https://github.com/thunlp/JointNRE) of the paper "Neural Knowledge Acquisition via Mutual Attention between Knowledge Graph and Text" (Han et al., 2018)
+Special thanks for the [codes](https://github.com/thunlp/JointNRE) of the paper "Neural Knowledge Acquisition via Mutual Attention between Knowledge Graph and Text" (Han et al., 2018)
