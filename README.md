@@ -27,12 +27,32 @@ python initialize_biomedical_part2.py
 - Execute the following command for NYT10 dataset.
 ~~~
 cd ugdsre_nyt10
-python test_pretrain_rank.py Y
+CUDA_VISIBLE_DEVICES=0 python2 test_ug_proposed.py ranking
+CUDA_VISIBLE_DEVICES=0 python2 test_ug_proposed.py ranking_pretrain
 ~~~
 - Execute the following command for Biomedical dataset.
 ~~~
 cd ugdsre_biomedical
-python test_pretrain_rank.py Y
+CUDA_VISIBLE_DEVICES=0 python test_ug_proposed.py ranking
+CUDA_VISIBLE_DEVICES=0 python test_ug_proposed.py ranking_pretrain
 ~~~
 ## The results of the pretrained model
+### Baseline model
+- Test the pretrained baseline model (Dai et al., 2019) via following command.
+~~~
+cd ugdsre_nyt10
+CUDA_VISIBLE_DEVICES=0 python test_baseline.py sent_kg
+~~~
+~~~
+cd ugdsre_biomedical
+CUDA_VISIBLE_DEVICES=0 python test_baseline.py sent_kg
+~~~
 ## Train our model
+~~~
+cd ugdsre_nyt10
+CUDA_VISIBLE_DEVICES=0 python train_ug_proposed.py
+~~~
+~~~
+cd ugdsre_biomedical
+CUDA_VISIBLE_DEVICES=0 python train_ug_proposed.py
+~~~
