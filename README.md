@@ -37,7 +37,7 @@ CUDA_VISIBLE_DEVICES=0 python2 test_ug_proposed.py ranking_pretrain
 cd ugdsre_biomedical
 CUDA_VISIBLE_DEVICES=0 python test_ug_proposed.py ranking_pretrain
 ~~~
-## The results of the pretrained model
+#### The results of the pretrained model
 ### Baseline model
 - Download the pretrained parameters of baseline model (Dai et al., 2019) from NYT10 and Biomedical and put them under `ugdsre_nyt10/model_saved` and `ugdsre_biomedical/model_saved` respectively, and test the model  via following command.
 ~~~
