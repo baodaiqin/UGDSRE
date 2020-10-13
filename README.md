@@ -1,7 +1,6 @@
 # UGDSRE
 Codes and datasets for our paper "Two Training Strategies for Improving Relation Extraction over Universal Graph"
 ## Overview of our framework
-<img src='overview_of_ugdsre.png' width='700'>
 ## Dependencies
 - python = 2.x
 - tensorflow = 1.9.0
@@ -40,6 +39,7 @@ CUDA_VISIBLE_DEVICES=0 python test_ug_proposed.py ranking_pretrain
 ~~~
 ## The results of the pretrained model
 ### Baseline model
+
 - Test the pretrained baseline model (Dai et al., 2019) via following command.
 ~~~
 cd ugdsre_nyt10
