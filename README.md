@@ -26,7 +26,7 @@ python initialize_biomedical_part2.py
 ~~~
 - Or you can download the preprocessed Biomedical dataset from here: part1; part2, and unzip them under `biomedical_part1` and `biomedical_part2` directory respectively.
 ## Evaluate pretrained model
-- Download the pretrained model's parameters from NYT10 and Biomedical and put them under `ugdsre_nyt10/model_saved` and `ugdsre_biomedical/model_saved` respectively.
+- Download our pretrained model's parameters from NYT10 and Biomedical and put them under `ugdsre_nyt10/model_saved` and `ugdsre_biomedical/model_saved` respectively.
 - Execute the following command on NYT10 dataset.
 ~~~
 cd ugdsre_nyt10
@@ -39,8 +39,7 @@ CUDA_VISIBLE_DEVICES=0 python test_ug_proposed.py ranking_pretrain
 ~~~
 ## The results of the pretrained model
 ### Baseline model
-
-- Test the pretrained baseline model (Dai et al., 2019) via following command.
+- Download the pretrained parameters of baseline model (Dai et al., 2019) from NYT10 and Biomedical and put them under `ugdsre_nyt10/model_saved` and `ugdsre_biomedical/model_saved` respectively, and test the model  via following command.
 ~~~
 cd ugdsre_nyt10
 CUDA_VISIBLE_DEVICES=0 python test_baseline.py sent_kg
