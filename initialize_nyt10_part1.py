@@ -3,7 +3,7 @@ import pickle
 import random
 import sys
 
-data_path = '/work/daiqin/DS_RE_wiki/origin_data_general/'
+data_path = './origin_data_nyt10/'
 export_path = './nyt10_part1/'
 
 maxlen = 120
