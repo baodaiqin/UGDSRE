@@ -1,7 +1,7 @@
 # UGDSRE
 Codes and datasets for our paper "Two Training Strategies for Improving Relation Extraction over Universal Graph"
 ## Overview of our framework
-![](overiew_of_ugdsre.png)
+![](overview_of_ugdsre.png)
 ## Dependencies
 - python = 2.x
 - tensorflow = 1.9.0
