@@ -26,10 +26,12 @@ python initialize_biomedical_part2.py
 - Download the pretrained model's parameters from NYT10 and Biomedical and put them under dir1 and dir2 respectively.
 - Execute the following command for NYT10 dataset.
 ~~~
+cd ugdsre_nyt10
 python test_pretrain_rank.py Y
 ~~~
 - Execute the following command for Biomedical dataset.
 ~~~
+cd ugdsre_biomedical
 python test_pretrain_rank.py Y
 ~~~
 ## The results of the pretrained model
