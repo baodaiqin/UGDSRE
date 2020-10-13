@@ -13,10 +13,8 @@ from sklearn.metrics import f1_score
 from metrics import metrics
 from kg_dataset_transe import KnowledgeGraph
 
-#export_path = "/home/dq/EACL_gen_strict/data_type_year/"
-#export_path_g = "/home/dq/EACL_gen_strict/data_type_g_year/"
-export_path = "/home/dq/nyt10_part1/"
-export_path_g = "/home/dq/nyt10_part1/" 
+export_path = "../nyt10_part1/"
+export_path_g = "../nyt10_part1/" 
 
 word_vec = np.load(export_path + 'vec.npy')
 
@@ -46,7 +44,7 @@ tf.app.flags.DEFINE_float('weight_decay',0.00001,'weight_decay')
 tf.app.flags.DEFINE_float('keep_prob',1.0,'dropout rate')
 
 tf.app.flags.DEFINE_integer('test_batch_size', 2,'entity numbers used each test time')
-tf.app.flags.DEFINE_string('checkpoint_path','./model_type_comp/','path to store model')
+tf.app.flags.DEFINE_string('checkpoint_path','./model/','path to store model')
 
 def complexity_features(array):
         return np.array([[np.count_nonzero(ele), np.unique(ele).size] for ele in array]).astype(np.int32)
