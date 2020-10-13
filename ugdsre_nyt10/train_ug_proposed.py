@@ -11,10 +11,8 @@ import ctypes
 import threading
 from kg_dataset_transe import KnowledgeGraph
 
-#export_path = "/home/dq/EACL_gen_strict/data_type_year/"
-#export_path_g = "/home/dq/EACL_gen_strict/data_type_g_year/"
-export_path = "/home/dq/nyt10_part1/"
-export_path_g = "/home/dq/nyt10_part1/"
+export_path = "../nyt10_part1/"
+export_path_g = "../nyt10_part1/"
 
 word_vec = np.load(export_path + 'vec.npy')
 
