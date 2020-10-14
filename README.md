@@ -19,7 +19,7 @@ python initialize_nyt10_part2.py
 ~~~
 - Or you can download the preprocessed NYT10 dataset from here: part1; part2, and unzip them under `nyt10_part1` and `nyt10_part2` directory respectively.
 ### Biomedical dataset
-- Unzip the Biomedical dataset and allocate all the files under `origin_data_biomedical` directory, then run the following commands for preprocessing. (Due to the large size of the dataset, it will takes about 2 hour to process the dataset.)
+- Unzip the Biomedical dataset and allocate all the files under `origin_data_biomedical` directory, then run the following commands for preprocessing. (Due to the large size of the dataset, it will takes about 2 hours to process the dataset.)
 ~~~
 python initialize_biomedical_part1.py
 python initialize_biomedical_part2.py
