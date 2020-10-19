@@ -12,9 +12,9 @@ import ctypes
 import threading
 from kg_dataset_transe import KnowledgeGraph
 
-export_path = "/home/dq/nyt10_part1/"
-export_path_g = "/home/dq/nyt10_part1/"
-export_path_l = "/home/dq/nyt10_part2/"
+export_path = "../nyt10_part1/"
+export_path_g = "../nyt10_part1/"
+export_path_l = "../nyt10_part2/"
 
 word_vec = np.load(export_path + 'vec.npy')
 
