@@ -22,18 +22,18 @@ KG = KnowledgeGraph(export_path)
 
 FLAGS = tf.app.flags.FLAGS
 
-tf.app.flags.DEFINE_integer('nbatch_kg', 200,'entity numbers used each training time')
+tf.app.flags.DEFINE_integer('nbatch_kg', 100,'entity numbers used each training time')
 tf.app.flags.DEFINE_float('margin',1.0,'entity numbers used each training time')
 tf.app.flags.DEFINE_float('learning_rate_kg',0.001,'learning rate for kg')
-tf.app.flags.DEFINE_integer('rel_total', 1376,'total of relations')
+tf.app.flags.DEFINE_integer('rel_total', 87,'total of relations')
 tf.app.flags.DEFINE_integer('katt_flag', 13, 'type of attention')
 
 tf.app.flags.DEFINE_string('model', 'cnn', 'neural models to encode sentences')
 tf.app.flags.DEFINE_integer('max_length', 120,'maximum of number of words in one sentence')
 tf.app.flags.DEFINE_integer('pos_num', 120 * 2 + 1,'number of position embedding vectors')
-tf.app.flags.DEFINE_integer('num_classes', 58,'maximum of relations')
+tf.app.flags.DEFINE_integer('num_classes', 87,'maximum of relations')
 
-tf.app.flags.DEFINE_integer('hidden_size', 230,'hidden feature size')
+tf.app.flags.DEFINE_integer('hidden_size', 100,'hidden feature size')
 tf.app.flags.DEFINE_integer('pos_size',5,'position embedding size')
 
 tf.app.flags.DEFINE_integer('max_epoch', 100,'maximum of training epochs')
@@ -204,7 +204,7 @@ def main(_):
 	average_precision = average_precision_score(exclude_na_flatten_label,exclude_na_flatten_output, average = "micro")
         
 	np.save('./result/'+FLAGS.model+'+sent_ug_trained_prob'+'.npy', exclude_na_flatten_output)
-        np.save('./result/'+FLAGS.model+'+sent_ug_trained_label'+'.npy',exclude_na_flatten_label)
+        np.save('./result/'+FLAGS.model+'+sent_ug_trained_label'+'.npy', exclude_na_flatten_label)
                 
 	print 'AUC: '+str(average_precision)
 	f.write(str(average_precision)+'\n')
