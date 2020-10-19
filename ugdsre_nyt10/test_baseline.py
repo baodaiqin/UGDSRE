@@ -14,8 +14,8 @@ from metrics import metrics
 #import add_at_to_sent_type as add_at_to_sent
 from kg_dataset_transe import KnowledgeGraph
 
-export_path = "/home/dq/EACL_gen_strict/data_type_year/"
-export_path_g = "/home/dq/EACL_gen_strict/data_type_l_year/"
+export_path = "../nyt10_part1/"
+export_path_g = "../nyt10_part2/"
 
 word_vec = np.load(export_path + 'vec.npy')
 
