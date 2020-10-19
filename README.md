@@ -59,5 +59,6 @@ python train_ug_proposed.py --gpu 0 --pretrain_epoch 50 --ranking_epoch 50
 cd ugdsre_biomedical
 python train_ug_proposed.py --gpu 0 --pretrain_epoch 50 --ranking_epoch 50
 ~~~
+- Finally, run `CUDA_VISIBLE_DEVICES=0 python2 test_ug.py --max_epoch 50` for testing.
 ## Acknowledgements
 Special thanks for the [codes](https://github.com/thunlp/JointNRE) of the paper "Neural Knowledge Acquisition via Mutual Attention between Knowledge Graph and Text" (Han et al., 2018)
