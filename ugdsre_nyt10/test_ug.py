@@ -132,7 +132,7 @@ def main(_):
 	f = open('results.txt','w')
 	f.write('iteration\taverage precision\n')
 	
-        saver.restore(sess, './model/cnnpretrain_ranking_%s' % FLAGS.max_epoch)
+        saver.restore(sess, './model/cnn_pretrain_ranking_%s' % FLAGS.max_epoch)
                         
 	stack_output = []
 	stack_label = []
