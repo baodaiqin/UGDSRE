@@ -49,13 +49,15 @@ cd ugdsre_biomedical
 CUDA_VISIBLE_DEVICES=0 python test_baseline.py sent_kg
 ~~~
 ## Train our model
+- For training UGDSRE on NYT10 dataset, run:
 ~~~
 cd ugdsre_nyt10
-CUDA_VISIBLE_DEVICES=0 python train_ug_proposed.py
+python train_ug_proposed.py --gpu 0 --pretrain_epoch 50 --ranking_epoch 50
 ~~~
+- For traing UGDSRE on Biomedical dataset, run:
 ~~~
 cd ugdsre_biomedical
-CUDA_VISIBLE_DEVICES=0 python train_ug_proposed.py
+python train_ug_proposed.py --gpu 0 --pretrain_epoch 50 --ranking_epoch 50
 ~~~
 ## Acknowledgements
 Special thanks for the [codes](https://github.com/thunlp/JointNRE) of the paper "Neural Knowledge Acquisition via Mutual Attention between Knowledge Graph and Text" (Han et al., 2018)
