@@ -210,8 +210,8 @@ def main(_):
 		        np.save('./result/'+FLAGS.model+'+sent_ug_ranking_prob'+'.npy', exclude_na_flatten_output)
                         np.save('./result/'+FLAGS.model+'+sent_ug_ranking_label'+'.npy',exclude_na_flatten_label)
                 elif pre_or_not == 'ranking_pretrain':
-                        np.save('./result/'+FLAGS.model+'+sen_ug_ranking_pretrain_rank_prob'+'.npy', exclude_na_flatten_output)
-                        np.save('./result/'+FLAGS.model+'+sen_ug_ranking_pretrain_rank_label'+'.npy',exclude_na_flatten_label)
+                        np.save('./result/'+FLAGS.model+'+sen_ug_ranking_pretrain_prob'+'.npy', exclude_na_flatten_output)
+                        np.save('./result/'+FLAGS.model+'+sen_ug_ranking_pretrain_label'+'.npy',exclude_na_flatten_label)
                         
 		print 'AUC: '+str(average_precision)
 		f.write(str(average_precision)+'\n')
