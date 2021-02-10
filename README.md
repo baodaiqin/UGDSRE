@@ -6,8 +6,8 @@ Codes and datasets for our paper "Two Training Strategies for Improving Relation
 ## Dependencies
 - python = 2.x
 - tensorflow = 1.9.0
-- numpy = 1.15.4
-- sklearn = 0.19.1
+- numpy
+- sklearn
 ## Data preprocessing
 - We use NYT10 (Riedel et al., 2010) and Biomedical datasets for evaluation.
 - The datasets with path evidences can be downloaded from here: NYT10 and Biomedical.
