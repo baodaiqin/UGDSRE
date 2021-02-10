@@ -1,5 +1,5 @@
 # UGDSRE
-Codes and datasets for our paper "???"
+Codes and datasets for our paper "Two Training Strategies for Improving Relation Extraction over Universal Graph"
 ## Overview of our framework
 <img src="overview_of_ugdsre.png" width="700">
 
