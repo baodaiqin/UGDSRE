@@ -30,7 +30,7 @@ python initialize_biomedical_part2.py
 - Execute the following command on NYT10 dataset.
 ~~~
 cd ugdsre_nyt10
-CUDA_VISIBLE_DEVICES=0 python2 test_ug_proposed.py ranking_pretrain
+CUDA_VISIBLE_DEVICES=0 python test_ug_proposed.py ranking_pretrain
 ~~~
 - Execute the following command on Biomedical dataset.
 ~~~
