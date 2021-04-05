@@ -14,15 +14,15 @@ Codes and datasets for our paper "Two Training Strategies for Improving Relation
 ### NYT10 dataset
 - Unzip the NYT10 dataset and allocate all the files under `origin_data_nyt10` folder, then run the following commands for preprocessing.
 ~~~
-python initialize_nyt10_part1.py
-python initialize_nyt10_part2.py
+python2 initialize_nyt10_part1.py
+python2 initialize_nyt10_part2.py
 ~~~
 - Or you can download the preprocessed NYT10 dataset from here: [part1](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_EACL2021/nyt10_part1.zip); [part2](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_EACL2021/nyt10_part2.zip), and unzip them under `nyt10_part1` and `nyt10_part2` directory respectively.
 ### Biomedical dataset
 - Unzip the Biomedical dataset and allocate all the files under `origin_data_biomedical` directory, then run the following commands for preprocessing. (Due to the large size of the dataset, it will takes about 2 hours to process the dataset.)
 ~~~
-python initialize_biomedical_part1.py
-python initialize_biomedical_part2.py
+python2 initialize_biomedical_part1.py
+python2 initialize_biomedical_part2.py
 ~~~
 - Or you can download the preprocessed Biomedical dataset from here: [part1](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_EACL2021/biomedical_part1.zip); [part2](http://www.cl.ecei.tohoku.ac.jp/~dq/Data_for_EACL2021/biomedical_part2.zip), and unzip them under `biomedical_part1` and `biomedical_part2` directory respectively.
 ## Evaluate pretrained model
