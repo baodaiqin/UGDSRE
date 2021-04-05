@@ -5,8 +5,8 @@ import sys
 from time import time
 
 data_path = './origin_data_type_year/'
-export_path_g = '/home/dq/biomedical_part2/'
-export_path = '/home/dq/biomedical_part1/'
+export_path_g = './biomedical_part2/'
+export_path = './biomedical_part1/'
 
 maxlen = 120
 fixlen = 120
